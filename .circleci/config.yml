@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build-and-test:
     macos:
-      xcode: 13.4
+      xcode: 12.5.1
     environment:
       FL_OUTPUT_DIR: output
     steps:
@@ -19,7 +19,7 @@ jobs:
           path: output/scan
   adhoc:
     macos:
-      xcode: 13.4
+      xcode: 12.5.1
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: adhoc
